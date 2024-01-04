@@ -1,0 +1,50 @@
+<div class="card card-container">
+    <div class="card-body">
+        <h5 class="card-title">Login Form</h5>
+   <form [formGroup]="loginForm" class="row g-3" novalidate>
+        <div class="col-md-12">
+          <label class="form-label">Username</label>
+          <input type="text" class="form-control" placeholder="Username" formControlName="username"  required>
+          
+          <div *ngIf="submitted && f['username'].errors" class="invali-feedback">
+         <span *ngIf="f['username'].errors['required']"> User name is required</span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label  class="form-label">Password</label>
+          <input type="password" placeholder="Password" class="form-control" formControlName="password"   required>
+          
+          <div *ngIf="submitted && f['password'].errors" class="invali-feedback">
+            <span *ngIf="f['password'].errors['required']"> Password is required</span>
+             </div>
+        </div>
+        
+        <div class="col-12 text-center">
+          <button class="btn btn-primary btn-sm" type="submit" (click)="login()">Login</button>
+          <button  class="btn btn-danger btn-sm btn-space" type="reset">Reset</button>
+        </div>
+      </form>
+      </div>
+      </div>
+<!-- 
+      <div class="card new-card">
+        <div class="card-body">
+          <h5 class="card-title">Login</h5>
+          <form class="row novalidate">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <label class="form-label">Username</label>
+              <input placeholder="Username" class="form-control" required>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <label>Password</label>
+              <input placeholder="password" type="password" class="form-control" required>
+            </div>
+
+            <div class="col-lg-12 text-center">
+              <button class="btn btn-primary btn-sm" type="submit">Login</button>
+              <button class="btn btn-danger btn-sm margin-button" type="reset">Reset</button>
+
+            </div>
+          </form>
+        </div>
+      </div> -->

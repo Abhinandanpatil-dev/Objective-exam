@@ -1,0 +1,35 @@
+.card-container {
+    width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    border: 1px solid #1976d2;
+
+    .card-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        background-color: #1976d2;
+        color: #FFF;
+        height: 40px;
+        align-items: center;
+        display: grid;
+    }
+    
+}
+
+
+.new-card {
+    margin: auto;
+    margin-top: 80px;
+    width: 350px;
+    border: 2px solid red;
+}
+
+.margin-button {
+    margin: 10px;
+}
+
+.invali-feedback {
+    color: rgb(244, 50, 50);
+}
